@@ -4,10 +4,37 @@
   "description": "Node.js on Docker",
   "author": "Jan Jagieła <janjag@humanistcanco.de>",
   "main": "server.js",
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack -p"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "react-hot-loader": "^4.3.4",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
   }
 }

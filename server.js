@@ -11,8 +11,9 @@ const calculateTime = () => parseFloat((Math.random(20) *20), 10).toFixed(2);
 
 // App
 const app = express();
+app.use('/dist', express.static(__dirname + '/dist'));
 app.get('/', (req, res) => {
-  res.send('Hello world\n');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/api', (req, res) => {

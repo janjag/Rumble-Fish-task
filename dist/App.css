@@ -2,5 +2,93 @@
     margin: 0;
     outline: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+:root {
+    --pink: #f12d68;
+    --white: #fdfdfd;
+    --black: #343434;
+    --shadow: rgba(122, 122, 122, 0.4);
+}
+
+html {
+    color: var(--black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 62.5%;
+    font-weight: 300;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.AppLayout {
+    background-color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+    height: 100vh;
+    widows: 100%;
+}
+
+.AppResults {
+    border-bottom: .2em solid var(--pink);
+    border-radius: .3em;
+    -webkit-box-shadow: 0 .1em .3em 0 var(--shadow);
+            box-shadow: 0 .1em .3em 0 var(--shadow);
+    padding: 2em 3em;
+    max-width: 60rem;
+    text-align: center;
+}
+
+.AppTitle {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: .5em;
+}
+
+.AppResult {
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 2em;
+}
+.AppResult b {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.AppValue {
+    color: var(--pink);
+    font-size: 1.2em;
+}
+
+.AppButton {
+    background-color: var(--pink);
+    border: 0;
+    border-radius: .3em;
+    -webkit-box-shadow: 0 .1em .3em 0 var(--shadow);
+            box-shadow: 0 .1em .3em 0 var(--shadow);
+    color: var(--white);
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: .5em 2em;
+    cursor: pointer;
+    -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+    transition: -webkit-box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+}
+.AppButton:hover {
+    -webkit-box-shadow: 0 0 0 0 var(--white);
+            box-shadow: 0 0 0 0 var(--white);
 }

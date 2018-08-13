@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import * as actionCreators from './store/actions';
-import Layout from './components/Layout/Layout';
 import Results from './components/Results/Results';
 
 class App extends Component {
@@ -17,13 +16,11 @@ class App extends Component {
 
     render() {
         return(
-            <Layout>
-                <Results 
-                    time={this.props.time}
-                    value={this.props.value}
-                    refresh={this.refreshData}
-                />
-            </Layout>
+            <Results 
+                time={this.props.time}
+                value={this.props.value}
+                refresh={this.refreshData}
+            />
         );
     }
 }

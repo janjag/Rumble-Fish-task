@@ -1,3 +1,3 @@
 export {
     getTime
-} from './actionsCrestors'
+} from './actionCreator'

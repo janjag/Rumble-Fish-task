@@ -1,5 +1,7 @@
 ## Not for use on production
 
+To run this app use ```npm start```.
+
 This simple app was created as recruitment task:
 
 > Create a node.js application that calculates an average time of adding a block to the ethereum blockchain. This information should available through an API. Furthermore, API should be consumed by a FE application with the purpose of displaying the average time. FE should be written using react and a state manager of your choice (redux, mobx etc.). It would be considered a good practice to use Docker in the development process.

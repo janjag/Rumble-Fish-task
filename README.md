@@ -12,3 +12,8 @@ Front end uses react + redux and basic webpack configuration (more solid configu
 
 Unfortunately i didn't make it run on docker container *(First time working with it. I run into some problems with mounting working directory into container and i took too long to resolve issue)*.
 
+## Improvements 
+
+- Switching to async requests
+- Adding loader component to front end for pending requests
+- Adding additional input to set number of blocks used in calculation 

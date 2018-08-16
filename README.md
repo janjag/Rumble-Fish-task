@@ -15,5 +15,8 @@ Unfortunately i didn't make it run on docker container *(First time working with
 ## Improvements 
 
 - Switching to async requests
-- Adding loader component to front end for pending requests
+- ~~Adding loader component to front end for pending requests~~
 - Adding additional input to set number of blocks used in calculation 
+
+### or
+- change how app is working: from request based to more "live" approach with calls to api on interval and calculate the average time after each response

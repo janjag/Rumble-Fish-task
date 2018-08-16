@@ -19,6 +19,7 @@ class App extends Component {
             <Results 
                 time={this.props.time}
                 value={this.props.value}
+                loading={this.props.loading}
                 refresh={this.refreshData}
             />
         );
@@ -28,7 +29,8 @@ class App extends Component {
 const mapStateToProps = state => {
     return {
       time: state.time,
-      value: state.value
+      value: state.value,
+      loading: state.loading
     };
   };
   

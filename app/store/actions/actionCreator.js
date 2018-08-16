@@ -8,8 +8,15 @@ export const reportTime = (data) => {
     }
 }
 
+export const loading = () => {
+    return {
+        type: actionType.LOADING
+    }
+}
+
 export const getTime = () => {
     return dispatch => {
+        dispatch(loading());
         const reqInit = {
             method: 'GET',
             mode: 'cors'

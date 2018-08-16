@@ -11,9 +11,6 @@ const web3 = new Web3(new Web3.providers.HttpProvider(ethUrl));
 const PORT = 8080;
 const HOST = 'localhost';
 
-// Dummy function for calculating average time of adding a block to the ethereum blockchain
-const calculateTime = () => parseFloat((Math.random(20) *20), 10).toFixed(2);
-
 /**
  * @param  {number} count Number of previos blocks for calculation, default is 10.  
  */
